@@ -68,6 +68,10 @@ body #personnages {
     display: flex;
 }
 
+body #routes {
+    display: flex;
+}
+
 footer .form-part input{
     display: flex;
     border: none;
