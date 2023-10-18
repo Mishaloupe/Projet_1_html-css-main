@@ -34,12 +34,11 @@ nav ul {
 
 nav ul li {
     padding: 4px;
-    background-color: #ff8806;
+    border: solid 4px #ff8806;
 }
 
 nav ul li .nav-bar {
     padding: 1px 40px;
-    background-color: black;
 }
 
 nav ul a{
@@ -64,32 +63,88 @@ header img {
     display: flex;
     margin-top: -700px;
 }
-/* 
+
 body #trailer {
     display: flex;
-} */
+    justify-content: center;
+}
 
 body #personnages{
     display: flex;
+}
+
+body #personnages h2{
+    text-align: center;
+}
+
+body #personnages .char{
+    display: flex;
+    margin: 20px 10px;
+    padding: 10px;
+    border: solid 3px white;
+    justify-content:space-between;
+}
+
+body #personnages #Toriel {
+    width: 9.5%;
+}
+
+body #personnages #Papyrus {
+    width: 12.2%;
+}
+
+body #personnages #Undyne {
+    width: 8.5%;
+}
+
+body #personnages #Muffet {
+    width: 11%;
+}
+
+body #personnages #Asgore {
+    width: 14%;
+}
+
+body h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+body #personnages .char p{
+    margin-left: 20px;
+    text-align: center;
 }
 
 body #routes {
     display: flex;
 }
 
-footer .form-part input {
-    justify-content: space-around;    
+footer .form-part1 {
+    display: flex;
+    justify-content: right;
+    padding-right: 21.6%;
+}
+
+footer .form-part2 {
+    display: flex;
+    justify-content: right;
+    padding-right: 20%;
 }
 
 footer .form-element input {
     display: flex;
     border: none;
     border-bottom: 2px solid white;
-    background-color: black;
+    background-color: #212121;
     color: white;
     font-family: 'determination';
+    justify-content: center;
 }
 
 footer .form-element input:focus {
     outline: none;
+}
+
+footer {
+    background-color: #212121;
 }
