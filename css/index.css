@@ -23,6 +23,7 @@ nav {
     background-color: black;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1000px 900px 500px 0px;;
+    padding: 1000px 0px 100px 0px;
 }
 
 header img {
@@ -64,12 +65,17 @@ header img {
     margin-top: -700px;
 }
 
+body #description {
+    text-align: center;
+    padding: 0px 350px 50px;
+}
+
 body #trailer {
     display: flex;
     justify-content: center;
 }
 
-body #personnages{
+body #personnages .column{
     display: flex;
 }
 
@@ -77,32 +83,54 @@ body #personnages h2{
     text-align: center;
 }
 
-body #personnages .char{
+body #personnages .charG{
     display: flex;
-    margin: 20px 10px;
+    width: 50%;
+    margin: 20px;
+    margin-left: 150px;
     padding: 10px;
     border: solid 3px white;
-    justify-content:space-between;
+}
+
+body .charG p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+body #personnages .charD{
+    display: flex;
+    width: 50%;
+    margin: 20px;
+    margin-right: 150px;
+    padding: 10px;
+    border: solid 3px white;
+}
+
+body .charD p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
 }
 
 body #personnages #Toriel {
-    width: 9.5%;
+    width: 9.3%;
 }
 
 body #personnages #Papyrus {
-    width: 12.2%;
+    width: 12%;
 }
 
 body #personnages #Undyne {
-    width: 8.5%;
+    width: 8.2%;
 }
 
 body #personnages #Muffet {
-    width: 11%;
+    width: 15%;
 }
 
 body #personnages #Asgore {
-    width: 14%;
+    width: 16%;
 }
 
 body h2 {
@@ -110,13 +138,69 @@ body h2 {
     font-size: 50px;
 }
 
-body #personnages .char p{
+body #personnages .charG p{
     margin-left: 20px;
     text-align: center;
 }
 
-body #routes {
+body #personnages .charD p{
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+body .line {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 25%;
+    height: 3px;
+    background-color: white;
+}
+
+body .routes .TextRoute {
+    text-align: center;
+    padding: 0px 450px;
+}
+
+body .routes {
+    position: relative;
+    display: inline-block;
+}
+
+body .routes #neutre {
+    display: flex;
+}
+
+body .routes #pacifiste {
+    display: flex;
+}
+
+body .routes #genocide {
+    display: flex;
+}
+
+body .routes #act {
+    width: 10%;
+    height: 10%;
+}
+
+body .routes #mercy {
+    width: 10%;
+    height: 10%;
+}
+
+body .routes #fight {
+    width: 10%;
+    height: 10%;
+}
+
+body #soundtrack {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
 footer .form-part1 {
