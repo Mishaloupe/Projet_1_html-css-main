@@ -13,6 +13,7 @@
 }
 
 body {
+    margin: 0px;
     font-family: 'determination';
     background-color: black;
     color: white;
@@ -64,7 +65,7 @@ header img {
     margin-top: -700px;
 }
 
-body #personnages {
+body #personnages{
     display: flex;
 }
 
@@ -72,8 +73,19 @@ body #routes {
     display: flex;
 }
 
-footer .form-part input{
+footer .form-part input {
+    justify-content: space-around;    
+}
+
+footer .form-element input {
     display: flex;
     border: none;
     border-bottom: 2px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'determination';
+}
+
+footer .form-element input:focus {
+    outline: none;
 }
