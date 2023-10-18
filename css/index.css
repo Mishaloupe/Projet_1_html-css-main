@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'determination';
+    src: url('DeterminationMonoWebRegular-Z5oq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mercy';
+    src: url('MERCY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    font-family: 'determination';
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    padding: 4px;
+    background-color: #ff8806;
+}
+
+nav ul li .nav-bar {
+    padding: 1px 40px;
+    background-color: black;
+}
+
+nav ul a{
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px 50px;
+    font-size: 20px;
+    display: contents;
+    color: #ff8806;
+    font-family: 'mercy';
+}
+
+header {
+    background-image:url('img/Castle_background_header.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1000px 900px 500px 0px;;
+}
+
+header img {
+    display: flex;
+    margin-top: -700px;
+}
+
+body #personnages {
+    display: flex;
+}
+
+footer .form-part input{
+    display: flex;
+    border: none;
+    border-bottom: 2px solid white;
+}
