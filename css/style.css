@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'determination';
+    src: url('DeterminationMonoWebRegular-Z5oq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mercy';
+    src: url('MERCY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+
+:root {
+    --fond: #000;
+    --text: #FFF;
+    --foot: #212121;
+    --navbar: #ff8806;
+    --navbarhover: #ffff01;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0px;
+    font-family: 'determination';
+    background-color: var(--fond);
+    color: var(--text);
+}
+
+body h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top:200px ;
+}
+
+body p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+
+
+
+
+
+
+nav {
+    background-color: var(--fond);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    padding: 0px;
+    border: solid 4px var(--navbar);
+}
+
+nav ul li:hover{
+    border-color: var(--navbarhover);
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px 50px;
+    display: contents;
+    color: var(--navbar);
+    font-family: 'mercy';
+    font-size: 25px;
+}
+
+nav ul li a .nav-bar {
+    padding: 1px 40px;
+}
+
+nav ul li:hover a .nav-bar{
+    color: var(--navbarhover);
+}
+
+
+
+
+
+
+
+
+
+header {
+    background-image:url('img/Castle_background_header.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1000px 0px 100px 0px;
+}
+
+header img {
+    display: flex;
+    margin-top: -700px;
+}
+
+
+
+
+
+
+
+body #description {
+    text-align: center;
+    padding: 0px 350px 50px;
+}
+
+
+
+body #trailer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+body #personnages {
+    display: flex;
+    padding: 0px 10%;
+}
+
+body #personnages p {
+    margin: 01px;
+}
+
+body .char {
+    border: solid 3px var(--text);
+    margin: 25px;
+    display: flex;
+}
+
+body .char img {
+    padding: 20px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+body .line {
+    margin: 4% auto;
+    width: 25%;
+    height: 3px;
+    background-color: var(--text);
+}
+
+body .routes {
+    display: flex;
+}
+
+body .routes .txtRoute {
+    padding: 0px 30%;
+}
+
+
+body .routes #act {
+    width: 8%;
+    height: 5%;
+    rotate: -40deg;
+    margin-left: 10%;
+    position: absolute;
+}
+
+body .routes #mercy {
+    width: 8%;
+    height: 5%;
+    rotate: 21deg;
+    margin: auto 3% auto auto;
+    margin-right: 11%;
+    position: absolute;
+    right: 0;
+}
+
+body .routes #fight {
+    width: 8%;
+    height: 5%;
+    rotate: 80deg;
+    margin-left: 12%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+body #soundtrack {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+footer #downpage {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #social-icons img{
+    width: 60px;
+}
+
+footer form {
+    padding-bottom: 50px;
+}
+
+footer .form-part1 {
+    display: flex;
+    padding-right: 10vw;
+}
+
+footer .form-part2 {
+    display: flex;
+    padding-right: 6vw;
+}
+
+footer .form-element {
+    margin: 20px 25px;
+}
+
+footer .form-element label {
+    white-space: nowrap;
+    font-size: x-large;
+}
+
+footer .form-element input {
+    width: 250px;
+    height: 25px;
+    display: flex;
+    border: none;
+    border-bottom: 2px solid var(--text);
+    background-color: var(--foot);
+    color: var(--text);
+    font-family: 'determination';
+    font-size: large;
+    }
+
+footer .form-element input:focus {
+    outline: none;
+}
+
+footer {
+    background-color: var(--foot);
+}
+
+footer h2 {
+    padding: 25px;
+}
